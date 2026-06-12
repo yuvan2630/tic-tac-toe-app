@@ -79,3 +79,20 @@ function restartGame() {
     document.getElementById("status").innerHTML =
         "Player X Turn";
 }
+let cell = document.getElementsByClassName("cell")[index];
+
+cell.innerHTML = currentPlayer;
+
+cell.classList.add("pop");
+
+setTimeout(() => {
+    cell.classList.remove("pop");
+}, 300);
+document.getElementsByClassName("cell")[a]
+    .classList.add("winner");
+
+document.getElementsByClassName("cell")[b]
+    .classList.add("winner");
+
+document.getElementsByClassName("cell")[c]
+    .classList.add("winner");
