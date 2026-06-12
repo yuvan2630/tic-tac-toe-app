@@ -96,3 +96,8 @@ document.getElementsByClassName("cell")[b]
 
 document.getElementsByClassName("cell")[c]
     .classList.add("winner");
+    confetti({
+    particleCount: 150,
+    spread: 70,
+    origin: { y: 0.6 }
+});
